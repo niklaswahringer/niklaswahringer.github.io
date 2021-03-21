@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description"/>
+    <meta name="keywords" content="keyword 1, keyword 2, keyword 3"/>
+    <meta name="author" content="niklaswahringer" />
+    <meta name="copyright" content="Copyright-Owner" />
+    <meta name="robots" content="index, follow"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;450;900&display=swap" rel="stylesheet">
+    <title>Weingut Donabaum</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+
+    <link type="text/css" href="/css/normalize.css" rel="stylesheet" />
+    <link type="text/css" href="icons/fontawesome/css/all.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
+
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link type="text/css" rel="stylesheet" href="css/nav.css" />
+
+
+</head>
+<body>
+    <div class="loader-wrapper">
+        <span class="loader" style="background-image: url('img/logobaum.png');"><span class="loader-inner"></span></span>
+    </div>
+    <main>
+            <h1 style="position: absolute; top: 22vh; left: 35vw;">Login</h1>
+            <form style="top: 35vh; left: 35vw;" action="admin_panel.html">
+                <input type="text" value="User" />
+                <input type="text" value="Passwort" />
+                <button type="submit">Login</button>
+            </form>
+
+    </main>
+
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".loader-wrapper").fadeOut("slow");
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>
