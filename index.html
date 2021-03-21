@@ -18,8 +18,6 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
     <link type="text/css" href="/css/normalize.css" rel="stylesheet" />
     <link type="text/css" href="icons/fontawesome/css/all.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen"/>
@@ -38,17 +36,19 @@
             <nav style="height: 100px;">
                 <div class="nav-wrapper-2">
                     <a href="#" class="brand-logo"><img src="img/logo23.png" class="logoc"></a>
-                    <ul>
+                    <ul class="nav-links">
                         <li><a href="#NE">News</a></li>
                         <li><a href="#HE">Heuriger</a></li>
                         <li><a href="#WE">Weine</a></li>
                         <li><a href="#PG">Presse</a></li>
-                        <li><a href="#Ko" style="margin-right: 35px;">Kontakt</a></li>
+                        <li><a href="#Ko">Kontakt</a></li>
                     </ul>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn" style="line-height: 0px;">
-                        <i class="fas fa-bars"></i>
-                    </label>
+
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
             </nav>
             <div class="center-text-top">
@@ -192,6 +192,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navlinks = document.querySelector(".nav-links");
+        const links = document.querySelector(".hamburger");
+
+        hamburger.addEventListener('click',() => {
+           navlinks.classList.toggle('open');
+        });
+
+    </script>
+
 
     <script>
         (function($){
