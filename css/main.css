@@ -466,7 +466,7 @@ img.lgbaum{
     float: none;
 }
 .buttonv1 {
-    width: 350px;
+    width: 275px;
     border: 1px solid var(--bg_color);
     margin: 25px auto 0px auto;
     font-size: 1.2rem;
@@ -497,6 +497,12 @@ img.lgbaum{
     left: 72vw;
     transform: rotate(15deg);
     display: block;
+}
+@media only screen and (min-width: 450px) {
+    .buttonv1 {
+        width: 350px;
+    }
+
 }
 @media only screen and (min-width: 675px) {
     .hsmall{
