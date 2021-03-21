@@ -477,7 +477,7 @@ img.lgbaum{
     background: var(--main_color);
 }
 
-.tb_row .buttonv1:hover {
+.buttonv1:hover {
     box-shadow: 2px 3px 10px var(--main_color);
 }
 
