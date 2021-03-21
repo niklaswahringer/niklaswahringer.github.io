@@ -448,6 +448,9 @@ h1{
     object-fit: cover;
 }
 
+.splitdiv{
+    width: 100vw;
+}
 .si-l{
     display: block;
     float: right;
@@ -496,7 +499,7 @@ img.lgbaum{
 }
 
 .flaschen{
-    position: relative; width: 10vw;height: auto; float: left; margin-left: 12vw;
+    position: relative; width: 10vw;height: auto; float: left; margin-left: 12vw; min-width: 100px;
 }
 
 .wt-1{
@@ -554,6 +557,15 @@ img.lgbaum{
     .v3 {
         visibility: visible;
     }
+    .splitdiv{
+         width: 44vw;
+        float: left;
+        margin-left: 0vw;
+     }
+    .splitdiv .flaschen{
+        margin-left: 0vw;
+    }
+
     .section-image-lr {
         width: 50vw;
         height: auto;
