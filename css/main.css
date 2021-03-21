@@ -24,6 +24,11 @@ body{
 footer, header, nav, section, aside, article {
     display: block;
 }
+
+a {
+    text-decoration: none;
+}
+
 .nav-wrapper a{
     font-size: 1.3rem;
     margin-top: 17px;
@@ -55,9 +60,7 @@ nav, .page-footer{
     font-size: 1.2rem;
 }
 
-nav ul a{
-  font-size: 1.1rem;
-}
+
 .h-img{
     overflow: hidden;
     background-size: cover;
@@ -121,9 +124,7 @@ h1{
 }
 
 .button:hover{
-    box-shadow: 1px 1px 1px var(--secondary_color);
-    color: lightgoldenrodyellow;
-    padding: 17px;
+    box-shadow: 2px 3px 10px var(--main_color);
 }
 
 .golden-quote{
@@ -488,6 +489,15 @@ img.lgbaum{
     position: absolute; width: auto;height: 225vh;top: -120vh; left: -20vw;
 }
 
+.wt-1{
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: -150px;
+    left: 72vw;
+    transform: rotate(15deg);
+    display: block;
+}
 @media only screen and (min-width: 675px) {
     .hsmall{
         width: 800px;

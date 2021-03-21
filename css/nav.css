@@ -2,18 +2,25 @@ nav{
 
     background: none;
     border-bottom: 1px solid white;
-    width: 80vw;
+    width: 100vw;
+    position: relative;
+    z-index: 100;
     box-shadow: none;
     margin-top: 3vh;
-    margin-left: 10vw;
+    margin-left: 0vw;
 }
 nav ul{
     float: right;
-    margin-top: 25px;
+    margin-top: 40px;
     font-weight: lighter;
-    margin-right: 7vw;
+    margin-right: 6vw;
 }
-.nav-wrapper a{
+
+.nav-wrapper-2{
+    margin-top: 15px;
+}
+
+nav ul a{
     font-size: 1.4rem;
 }
 
@@ -22,28 +29,31 @@ nav ul{
     left: 7vw;
     top: 27vh;
 }
-
+.logoc{
+    width: 300px;
+    margin-left: 7vw;
+    margin-top: 16px;
+}
 .t1{
-    font-size: 1.6rem;
+    font-size: 1rem;
     display: block;
     position: absolute;
-    left: 0vw;
-    right: unset;
-    top: -12px;
+    right: 0vw;
+    top: 3px;
     font-weight: lighter;
     font-style: italic;
 }
 .t2{
-    font-size: 4.6rem;
+    font-size: 4.0rem;
     text-transform: uppercase;
     font-family: var(--heading_font);
     font-weight: bold;
 }
 .t3{
-    font-size: 3.75rem;
+    font-size: 3.4rem;
     display: block;
     position: absolute;
-    top: unset;
+    top: 50px;
     left: 15px;
     font-family: var(--heading_font);
     font-weight: lighter;
@@ -111,14 +121,38 @@ button{
     100% { height: 0%;}
 }
 
+.hamburger{
+    float: right;
+    display: none;
+    margin-right: 37px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.line{
+    width: 38px;
+    height: 6px;
+    background: white;
+    margin: 7px;
+}
+
+.nav-links.open{
+    top: 60px;
+    right: 0%;
+    margin-right: 0px;
+}
+
 
 @media only screen and (min-width: 550px) {
     .t1 {
-        left: unset;
-        right: 0vw;
+        font-size: 1.6rem;
+        top: -12px;
+    }
+    .t2 {
+        font-size: 4.6rem;
     }
     .t3 {
         top: 68px;
+        font-size: 3.75rem;
     }
 }
 
@@ -130,7 +164,55 @@ button{
         left: 20vw;
     }
 }
-
+@media (max-width: 858px) {
+    .wt-1{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    nav{
+        background: var(--main_color);
+        border-bottom: none;
+        margin-top: 0vh;
+        position: fixed;
+    }
+    .logoc{
+        margin-left: 2.5vw;
+        margin-top: -5px;
+    }
+    nav ul{
+        margin-right: 0px;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #F1F0EB;
+        top: -500px;
+        right: 0%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 5px 0;
+        float: none;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+        color: var(--main_color);
+        padding: 14px 0px;
+    }
+    a:hover,a.active{
+        background: none;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    nav {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+}
 @media only screen and (min-width: 1100px) {
     form{
         display: block;
