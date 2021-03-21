@@ -609,7 +609,7 @@ img.lgbaum{
     .center-text1{
         float: left;
         width: 50vw;
-        padding: 8% 15vw 8% 15vw;
+        padding: 8% 15vw 5% 15vw;
     }
 }
 @media only screen and (min-width: 1850px) {
