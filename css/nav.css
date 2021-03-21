@@ -19,7 +19,7 @@ nav ul{
 
 .center-text-top{
     position: absolute;
-    left: 20vw;
+    left: 7vw;
     top: 27vh;
 }
 
@@ -27,7 +27,8 @@ nav ul{
     font-size: 1.6rem;
     display: block;
     position: absolute;
-    right: 0vw;
+    left: 0vw;
+    right: unset;
     top: -12px;
     font-weight: lighter;
     font-style: italic;
@@ -42,7 +43,7 @@ nav ul{
     font-size: 3.75rem;
     display: block;
     position: absolute;
-    top: 68px;
+    top: unset;
     left: 15px;
     font-family: var(--heading_font);
     font-weight: lighter;
@@ -109,6 +110,27 @@ button{
     95% { height: 100%;}
     100% { height: 0%;}
 }
+
+
+@media only screen and (min-width: 550px) {
+    .t1 {
+        left: unset;
+        right: 0vw;
+    }
+    .t3 {
+        top: 68px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    form{
+        display: block;
+    }
+    .center-text-top {
+        left: 20vw;
+    }
+}
+
 @media only screen and (min-width: 1100px) {
     form{
         display: block;
