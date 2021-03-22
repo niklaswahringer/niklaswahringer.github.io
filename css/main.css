@@ -100,6 +100,7 @@ h5{
 h3{
     font-family: var(--heading_font);
     font-weight: bold;
+    font-variant: small-caps;
     color: var(--main_color);
     font-size: 3.7rem;
 }
