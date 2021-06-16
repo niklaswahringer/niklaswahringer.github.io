@@ -85,6 +85,7 @@
 .t1{
     font-size: 1rem;
     display: block;
+    letter-spacing: 7px;
     position: absolute;
     left: 0vw;
     right: unset;
