@@ -13,8 +13,8 @@
     <link rel="shortcut icon" href="img/favicon.ico" />
 
 
-    <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
 
@@ -30,25 +30,20 @@
         <span class="loader" style="background-image: url('img/logobaum.png');"><span class="loader-inner"></span></span>
     </div>
     <header>
-        <div class="h-img" style="position: relative; background-image: url('img/headerimg1.jpg');">
-            <nav style="height: 100px;">
-                <div class="nav-wrapper-2">
-                    <a href="index.html" class="brand-logo"><img src="img/logo23.png" style="width: 300px;margin-left: 7vw;"></a>
-                    <ul>
-                        <li><a href="index.html#NE">News</a></li>
-                        <li><a href="index.html#HE">Heuriger</a></li>
-                        <li><a href="index.html#WE">Weine</a></li>
-                        <li><a href="index.html#PG">Presse</a></li>
-                        <li><a href="index.html#Ko" style="margin-right: 35px;">Kontakt</a></li>
+            <div class="headernav">
+                    <a href="index.html" class="logo l23 "><img src="img/logo23.png" class="logoc"></a>
+                    <a href="index.html" class="logo l12"><img src="img/logo12.png" class="logoc" onclick="toggleMenu2();"></a>
+                    <div class="menutoggle" onclick="toggleMenu();"></div>
+                    <ul class="navigation">
+                         <li><a href="index.html#WG" onclick="toggleMenu();">Weingut</a></li>
+                        <li><a href="index.html#HE" onclick="toggleMenu();">Heuriger</a></li>
+                        <li><a href="index.html#WE" onclick="toggleMenu();">Weine</a></li>
+                        <li><a href="index.html#PG" onclick="toggleMenu();">Galerie</a></li>
+                        <li><a href="index.html#Ko" onclick="toggleMenu();">Kontakt</a></li>
                     </ul>
-
-                    <div class="hamburger">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                    </div>
                 </div>
-            </nav>
+
+        <div class="h-img" style="position: relative; background-image: url('img/headerimg1.jpg');">
             <div class="center-text-top" style="top: 31vh;">
                 <p class="t1">seit 160 Jahren</p>
                 <p class="t2">Unser Weingut</p>
@@ -62,41 +57,84 @@
     </header>
     <main>
 
-        <div class="section" style="min-height:50px; margin-bottom: 25px; width: 100%;color: var(--main_color);">
+        <div class="section" style="min-height:50px; padding-bottom: 25px; width: 100%;color: var(--main_color);">
             <h3 style="margin-top: 25px;text-align: center;">Rieden</h3>
             <div class="strich2" style="background-color: var(--main_color);margin-left: 38vw;width: 13vw;"></div>
         </div>
 
-        <div class="sectionlr">
-            <div class="tb_row">
-                <div class="center-text1">
-                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Ried 1000-Eimerberg (Subriede von Burgberg)</p>
-                </div>
-                <img class="section-image-lr si-l" src="img/o_garten.jpg" alt="Bild vom Garten" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-            </div>
-            <div class="tb_row">
-                <img class="section-image-lr si-r" src="img/Schank_mini.jpg" style="float: left;" alt="Bild von Innen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <div class="center-text1">
-                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="500">
-                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Ried Zornberg</p>
-                </div>
-            </div>
-            <div class="tb_row">
-                <div class="center-text1">
-                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
-                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Ried Spitzer Point</p>
-                </div>
-                <img class="section-image-lr si-l" src="img/o_garten.jpg" alt="Bild vom Garten" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-            </div>
-            <div class="tb_row">
-                <img class="section-image-lr si-r" src="img/Schank_mini.jpg" style="float: left;" alt="Bild von Innen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-                <div class="center-text1">
-                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="500">
-                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Ried Setzberg</p>
-                </div>
-            </div>
+        <div class="section" style="padding-top: 0px;padding-bottom: 50px;">
+
+                <img class="section-image" src="img/Rieden/1000-Eimerberg.jpg" style="float: left;" alt="Bild von Innen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+            
+                <div class="strich3" style="background-color: var(--main_color);height: 35px;"></div>
+                <p class="rieden-txt-h" id="testtt">Zornberg</p>
+                <div class="strich3" style="background-color: var(--main_color);height: 15px;"></div>
+                <img src="img/logobaum.png" class="lgbaum baumspecial b-selected" alt="Bild von Baum" id="zornberg-b" onclick="toggleRiede()">
+                <div class="strich3" style="background-color: var(--main_color);"></div>
+                <p class="rieden-txt-h">1000-Eimerberg</p>
+                <div class="strich3" style="background-color: var(--main_color);height: 15px;"></div>
+                <img src="img/logobaum.png" class="lgbaum baumspecial" alt="Bild von Baum" onclick="toggleRiede()">
+                <div class="strich3" style="background-color: var(--main_color);"></div>
+                <p class="rieden-txt-h">Setzberg</p>
+                <div class="strich3" style="background-color: var(--main_color);height: 15px;"></div>
+                <img src="img/logobaum.png" class="lgbaum baumspecial" alt="Bild von Baum" onclick="toggleRiede()">
+                <div class="strich3" style="background-color: var(--main_color);"></div>
+                <p class="rieden-txt-h">Offenberg</p>
+                <div class="strich3" style="background-color: var(--main_color);height: 15px;"></div>
+                <img src="img/logobaum.png" class="lgbaum baumspecial" alt="Bild von Baum" onclick="toggleRiede()">
+                <div class="strich3" style="background-color: var(--main_color);"></div>
+                <p class="rieden-txt-h">Spitzer Graben</p>
+                <div class="strich3" style="background-color: var(--main_color);height: 15px;"></div>
+                <img src="img/logobaum.png" class="lgbaum baumspecial" alt="Bild von Baum" onclick="toggleRiede()">
+                
+                
         </div>
+        <!--<div class="sectionlr">
+            <div class="tb_row">
+                <div class="center-text1">
+                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Zornberg</p>
+                    <p style="font-size: 1.2rem;">
+                            Der Offenberg ist eine steil terrassierte Lage die vom Zornberg sowie Setzberg eingebettet wird.
+                            In der westlichen Wachau um Spitz besteht das Ausgangsgestein der Weingartenböden immer
+                            wieder aus Marmor. Wie Gneis ist der Spitzer Marmor ein Umwandlungsgestein der Variszischen
+                            Gebirgsbildung..
+                            Der Kalksilikatmarmor am Offenberg ist stark verwittert, der hohe Silikatanteil begünstigt trotz hohen
+                            Kalkgehalt die Bildung eines sandigen Bodens. Die Weine auf marmorartigen Gesteinen zeigen sich
+                            durch den hohen Kalkanteil weicher und vollmundiger als Weine auf sandigen Böden ohne Kalk.
+                    </p>
+                </div>
+                <img class="section-image-lr si-l" src="img/Rieden/Donabaum_015_PANO.jpg" alt="Bild vom Garten" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+            </div>
+            <div class="tb_row">
+                <img class="section-image-lr si-r" src="img/Rieden/1000-Eimerberg.jpg" style="float: left;" alt="Bild von Innen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <div class="center-text1">
+                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="500">
+                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">1000-Eimerberg</p>
+                </div>
+            </div>
+            <div class="tb_row">
+                <div class="center-text1">
+                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Setzberg</p>
+                </div>
+                <img class="section-image-lr si-l" src="img/Rieden/Setzberg_2.jpg" alt="Bild vom Garten" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+            </div>
+            <div class="tb_row">
+                <img class="section-image-lr si-r" src="img/Rieden/Offenberg.jpg" style="float: left;" alt="Bild von Innen" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
+                <div class="center-text1">
+                    <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000"  data-aos-delay="500">
+                    <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Offenberg</p>
+                </div>
+            </div>
+            <div class="tb_row">
+                    <div class="center-text1">
+                        <img src="img/logobaum.png" class="lgbaum" alt="Bild von Baum" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+                        <p data-aos="fade-up" data-aos-duration="750" data-aos-delay="1000">Spitzer Graben</p>
+                    </div>
+                    <img class="section-image-lr si-l" src="img/Rieden//SpitzerGraben3_Löff_Monika.jpg" alt="Bild vom Garten" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+                </div>
+        </div>-->
 
 
     <div class="section" style="background-color: #F1F0EB; float: left; width: 100%; min-height: 500px; overflow: hidden;" id="WE">
@@ -142,7 +180,7 @@
         <div><div style="position: absolute"><div class="vstrich v3"></div></div></div>
         <div class="container">
             <div style="position: absolute;">
-                <img src="img/weintraube.png" style="position: absolute; width: 250px;height: 300px;top: -150px; left: 72vw;transform: rotate(15deg);">
+               <!-- <img src="img/weintraube.png" style="position: absolute; width: 250px;height: 300px;top: -150px; left: 72vw;transform: rotate(15deg);">-->
             </div>
             <div class="row">
                 <div class="col l6 s10">
@@ -170,6 +208,48 @@
             </div>
         </div>
     </footer>
+    <script>
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('.headernav');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+    
+    
+            function toggleMenu2(){
+                const menutoggle = document.querySelector('.menutoggle');
+                const navigation = document.querySelector('.navigation');
+    
+                if(menutoggle.classList.contains('active')){    
+                    menutoggle.classList.toggle('active');
+                    navigation.classList.toggle('active');
+                }
+            }
+            function toggleMenu(){
+                const menutoggle = document.querySelector('.menutoggle');
+                const navigation = document.querySelector('.navigation');
+                const header = document.querySelector('.headernav');
+    
+                if($(document).width()<1030){
+                menutoggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+                
+                
+                    if(menutoggle.classList.contains('active')&&header.classList.contains('active'))
+                    {
+                        
+                    }else{
+                        header.classList.toggle('active');
+                    }
+                }
+            }
+            function toggleRiede(){
+                
+                var bs = document.getElementsByClassName('.baumspecial')
+//                document.getElementById('testtt').innerHTML = bs;
+
+            }
+            
+        </script>
 
     <script>
         (function($){
