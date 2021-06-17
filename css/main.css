@@ -139,8 +139,22 @@ h1{
     color: var(--secondary_color);
     line-height: 2.2rem;
 }
+.txt2{
+    font-size: .5rem; 
+    font-weight: 500; 
+    color: var(--secondary_color);
+    line-height: 2.2rem;
+}
 
-
+.rieden-txt-h{
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    color: var(--main_color);
+}
 
 .button{
     background-color: var(--main_color);
@@ -211,6 +225,15 @@ h1{
     margin-bottom: 15px;
     width: 8vw;
     height: 4px;
+    //animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.strich3{
+    background-color: var(--bg_color);
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    width: 3px;
+    height: 50px;
     //animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 .vstrich {
@@ -473,6 +496,14 @@ h1{
     height: 35vh;
     object-fit: cover;
 }
+.section-image {
+    position: absolute;
+    width: 40vw;
+    margin-left: -5vw;
+    margin-top: 50px;
+    height: 60vh;
+    object-fit: cover;
+}
 
 .splitdiv{
     width: 100vw;
@@ -537,6 +568,23 @@ img.lgbaum{
     transform: rotate(15deg);
     display: block;
 }
+
+.baumspecial{
+    background-color: #F1F0EB;
+    padding: 20px 5px 20px 7px; 
+    border-radius: 50px;
+    border: 3px solid var(--main_color);
+    cursor: pointer;
+}
+.b-selected{
+    background-color: lightblue;
+}
+.baumspecial:hover{
+    background-color: rgb(228, 227, 225);
+    padding: 22px 7px 22px 9px; 
+}
+
+
 @media only screen and (min-width: 450px) {
     .buttonv1 {
         width: 350px;
